@@ -24,12 +24,11 @@ public final class DendrogramBuilder implements ClusteringBuilder {
     private final DendrogramNode[] nodes;
     private MergeNode lastMergeNode;
 
-
     public DendrogramBuilder(final int nObservations) {
         nodes = new DendrogramNode[nObservations];
-        for (int i = 0; i<nObservations; i++) {
-            nodes[i] = new ObservationNode(i);
-        }
+		for (int i = 0; i < nObservations; i++) {
+			nodes[i] = new ObservationNode(i);
+		}
     }
 
     public final void merge(final int i, final int j, final double dissimilarity) {
