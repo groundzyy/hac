@@ -86,9 +86,9 @@ public final class HierarchicalAgglomerativeClusterer {
             final int j = pair.getLarger();
             final double d = dissimilarityMatrix[i][j];
             
-			System.out.println("Agglomeration #" + a 
-					+ ": merging clusters " + i + " (cardinality " + (clusterCardinalities[i])
-					+ ") and " + j + " (cardinality " + (clusterCardinalities[j]) + ") with dissimilarity " + d);
+//			System.out.println("Agglomeration #" + a 
+//					+ ": merging clusters " + i + " (cardinality " + (clusterCardinalities[i])
+//					+ ") and " + j + " (cardinality " + (clusterCardinalities[j]) + ") with dissimilarity " + d);
             
             // cluster i becomes new cluster
             // (by agglomerating former clusters i and j)
